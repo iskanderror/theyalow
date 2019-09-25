@@ -38,7 +38,7 @@ body {
   width: 1300px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 112px 1674px 64px;
+  grid-template-rows: 112px 1671px 64px;
   align-items: center;
   background-image: url(../assets/top_layer.png);
   background-repeat: no-repeat;
@@ -49,21 +49,28 @@ body {
 }
 
 header {
+  margin-left: 140px;
+  margin-right: 140px;
   display: inline-flex;
-  justify-content: space-evenly;
-
+  justify-content: space-between;
+  align-items: flex-end;
   font-family: 'SegoeWP', sans-serif;
   font-size: 17px;
   text-transform: uppercase;
   color: #9B7D08;
 }
 
+/*
 header h1 {
   font-family: 'Lucida Sans Italic', sans-serif;
   font-size: 41px;
   font-style: italic;
   text-transform: uppercase;
   color: #ffffff;
+}
+*/
+.logo {
+  margin-bottom: 8px;
 }
 
 main {
@@ -149,9 +156,14 @@ main {
 }
 
 footer {
+  border-top: 1px solid #000000;
   background-color: #4c4c4c;
 }
 
+.footer-logo{
+  margin-left: 140px;
+}
+/*
 footer h1 {
   font-family: 'Lucida Sans Italic', sans-serif;
   font-size: 29px;
@@ -159,3 +171,4 @@ footer h1 {
   text-transform: uppercase;
   color: #ffffff;
 }
+*/
