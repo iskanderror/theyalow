@@ -1,3 +1,37 @@
+@font-face {
+  font-family: 'Lucida Sans Italic'; /*Helvetica, sans-serif;*/
+  src: url('./fonts/lucida-sans-italic.TTF');
+}
+
+@font-face {
+  font-family: 'Asap Regular'; /*Helvetica, sans-serif;*/
+  src: url('./fonts/asap-regular.otf');
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+  src: url('./fonts/open-sans-regular.woff');
+}
+
+@font-face {
+  font-family: 'PTSans Regular';
+  src: url('./fonts/pt-sans-regular.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeWP Light';
+  src: url('./fonts/segoe-wp-light.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeWP';
+  src: url('./fonts/segoe-wp.woff');
+}
+
+@font-face {
+  font-family: 'SegoeUI Light';
+  src: url('./fonts/segoe-ui-light.ttf');
+}
 /*TODO: grid areas  140px|...|140px*/
 
 body {
@@ -10,11 +44,26 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1300px auto;
+
+  letter-spacing: 0.01em;
 }
 
 header {
   display: inline-flex;
   justify-content: space-evenly;
+
+  font-family: 'SegoeWP', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #9B7D08;
+}
+
+header h1 {
+  font-family: 'Lucida Sans Italic', sans-serif;
+  font-size: 41px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 main {
@@ -26,6 +75,19 @@ main {
   display: grid;
   grid-template-columns: 141px auto 141px;
   align-items: center;
+
+  font-family: 'Asap Regular', sans-serif;
+  font-size: 63px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#ribbon .ribbon-text-up {
+  color: #f5c506;
+}
+
+#ribbon .ribbon-text-down {
+  color: #ffffff;
 }
 
 #ribbon-left-button {
@@ -46,16 +108,54 @@ main {
   display: inline-flex;
   justify-content: space-evenly;
   background-color: #f7f7f7;
+
+  font-family: 'SegoeUI Light', sans-serif;
+  font-size: 27px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 #content {
   background-color: #f5c407;
+  
+  font-family: 'SegoeWP Light', sans-serif;
+  font-size: 29px;
+  color: #ffffff;
+}
+
+#content h1 {
+  font-family: 'PTSans Regular', sans-serif;
+  font-size: 37px;
+  text-transform: uppercase;
 }
 
 #options {
   background-color: #4c4c4c;
+  font-family: 'PTSans Regular', sans-serif;
+  font-size: 22px;
+  color: #a9a9a7;
+}
+
+#options ul:nth-child(even) {
+  font-family: 'OpenSans Regular', sans-serif;
+}
+
+#options h1 {
+  font-family: 'PTSans Regular', sans-serif;
+  font-size: 43px;
+  text-transform: uppercase;
+  color: #f5c506;
 }
 
 footer {
   background-color: #4c4c4c;
+}
+
+footer h1 {
+  font-family: 'Lucida Sans Italic', sans-serif;
+  font-size: 29px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #ffffff;
 }
