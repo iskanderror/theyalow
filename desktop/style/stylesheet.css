@@ -158,11 +158,35 @@ main {
   justify-self: right;
 }
 
-#advantages {
-  display: inline-flex;
-  justify-content: space-evenly;
-  background-color: #f7f7f7;
+#advantages-box {
+  background-image: url(../assets/advantages_layer.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1300px auto;
+}
 
+#advantages {
+  height: 100%;
+  margin-left: 140px;
+  margin-right: 140px;
+  display: grid;
+  grid-template-columns: 2px 1fr 2px 1fr 2px 1fr 2px;
+  align-items: flex-end;
+  text-align: center;
+}
+
+#advantages .table-spacer{
+  height: 100%;
+  background-color: #d4d4d4;
+}
+
+#advantages figure {
+  padding-bottom: 15px;
+}
+
+figcaption {
+  margin-top: 5px;
+  list-style-type: none;
   font-family: 'SegoeUI Light', sans-serif;
   font-size: 27px;
   font-weight: lighter;
