@@ -69,6 +69,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 24px;
   list-style-type: none;
   font-family: 'SegoeWP', sans-serif;
@@ -85,7 +86,7 @@ header {
 }
 
 .menu .menu-icon {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .menu li a:hover{
@@ -110,6 +111,21 @@ main {
   display: grid;
   grid-template-columns: 141px auto 141px;
   align-items: center;
+}
+
+#ribbon-content {
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin-right: 15px;
+}
+
+.ribbon-video {
+  margin-right: 30px;
+  padding-bottom: 10px;
+}
+
+.ribbon-text{
+  padding-top: 5px;
 
   font-family: 'Asap Regular', sans-serif;
   font-size: 63px;
@@ -122,17 +138,20 @@ main {
 }
 
 #ribbon .ribbon-text-down {
+  padding-left: 10px;
   color: #ffffff;
+}
+
+.ribbon-button{
+  height: 58px;
+  width: 33px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f5c506;
 }
 
 #ribbon-left-button {
   justify-self: left;
-}
-
-#ribbon-content {
-  display: inline-flex;
-  justify-content: space-evenly;
-
 }
 
 #ribbon-right-button {
