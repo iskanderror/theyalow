@@ -210,23 +210,62 @@ figcaption {
   text-transform: uppercase;
 }
 
-#options {
+#options-box {
   background-color: #4c4c4c;
+}
+
+#options {
+  margin: 15px 140px 0px 140px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: 
+    "header header"
+    "picture list";
+  align-items: flex-end;
+}
+
+#options-header {
+  grid-area: header;
+  margin: 0.5em;
+  align-self: center;
+  text-align: center;
+  font-family: 'PTSans Regular', sans-serif;
+  font-weight: lighter;
+  font-size: 43px;
+  text-transform: uppercase;
+  color: #f5c506;
+}
+
+#options-picture{
+  margin-left: 1em;
+  grid-area: picture;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+#options-picture-tablet,
+#options-picture-mobile{
+  margin-left: 25px;
+  padding-bottom: 40px;
+
+}
+
+#options-list{
+  grid-area: list;
   font-family: 'PTSans Regular', sans-serif;
   font-size: 22px;
   color: #a9a9a7;
 }
 
-#options ul:nth-child(even) {
+#options .options-list:nth-child(even) {
   font-family: 'OpenSans Regular', sans-serif;
 }
 
-#options h1 {
-  font-family: 'PTSans Regular', sans-serif;
-  font-size: 43px;
-  text-transform: uppercase;
-  color: #f5c506;
-}
+
+
+
 
 footer {
   border-top: 1px solid #000000;
