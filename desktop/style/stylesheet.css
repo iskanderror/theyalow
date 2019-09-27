@@ -81,6 +81,8 @@ header {
 }
 
 .menu li a{
+  display: flex;
+  align-items: center;
   color: #9B7D08;
   text-decoration: none;
 }
