@@ -128,7 +128,6 @@ main {
 
 .ribbon-text{
   padding-top: 5px;
-
   font-family: 'Asap Regular', sans-serif;
   font-size: 63px;
   text-transform: uppercase;
@@ -241,8 +240,9 @@ figcaption {
 }
 
 #options-picture {
-  margin-left: 16px;
   grid-area: picture;
+  margin-left: 16px;
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: left;
@@ -252,6 +252,30 @@ figcaption {
 #options-picture-mobile {
   margin-left: 25px;
   padding-bottom: 40px;
+}
+
+#options-picture-label {
+  margin: 0;
+  padding: 0 5px 0;
+  position: absolute;
+  top: -30px;
+  left: -18px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  height: 117px;
+  width: 117px;
+  border-radius: 50%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 117px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #f5c506;
 }
 
 #options-list{
@@ -278,12 +302,12 @@ figcaption {
 #options-list li::before {
   content: url("../assets/bullet.png");
   position: absolute;
-	top: 0;
-	left: -0.75em;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-	width: 0.5em;
+  top: 0;
+  left: -0.75em;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width: 0.5em;
   padding-right: 1em;
   margin-left: -0.5em;
   margin-right: 0em;
