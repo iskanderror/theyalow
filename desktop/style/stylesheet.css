@@ -18,6 +18,16 @@
   src: url('./fonts/segoe-ui-light.ttf');
 }
 
+@font-face {
+  font-family: 'SegoeUI Bold';
+  src: url('./fonts/segoe-ui-bold.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('./fonts/segoe-ui.ttf');
+}
+
 body {
   width: 1300px;
   margin: 0 auto;
@@ -191,7 +201,7 @@ figcaption {
   grid-template-areas: 
     "header header header"
     "text video twitter"
-    "date . ."
+    "calendar . ."
     "slider slider slider";
   align-items: flex-start;
   height: 100%;
@@ -256,6 +266,37 @@ figcaption {
   left: 0;  
   bottom: 0.25em; 
   right: 0;
+}
+
+#content-calendar {
+  grid-area: calendar;
+  margin: 0;
+  height: 86px;
+  width: 113px;
+  align-self: flex-start;
+  text-align: center;
+  background-color: #ddb101;
+}
+
+#content-calendar p {
+  margin: 0;
+}
+
+#content-calendar .content-calendar-day {
+  padding-top: 8px; 
+  font-family: 'SegoeUI Bold', sans-serif;
+  font-size: 51px;
+  font-weight: bold;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+#content-calendar .content-calendar-month {
+  font-family: 'SegoeUI', sans-serif;
+  font-size: 21px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #b26529;
 }
 
 #options-box {
