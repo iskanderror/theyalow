@@ -4,21 +4,6 @@
 }
 
 @font-face {
-  font-family: 'Asap Regular'; /*Helvetica, sans-serif;*/
-  src: url('./fonts/asap-regular.otf');
-}
-
-@font-face {
-  font-family: 'OpenSans Regular';
-  src: url('./fonts/open-sans-regular.woff');
-}
-
-@font-face {
-  font-family: 'PTSans Regular';
-  src: url('./fonts/pt-sans-regular.ttf');
-}
-
-@font-face {
   font-family: 'SegoeWP Light';
   src: url('./fonts/segoe-wp-light.ttf');
 }
@@ -32,7 +17,6 @@
   font-family: 'SegoeUI Light';
   src: url('./fonts/segoe-ui-light.ttf');
 }
-/*TODO: grid areas  140px|...|140px*/
 
 body {
   width: 1300px;
@@ -128,7 +112,7 @@ main {
 
 .ribbon-text{
   padding-top: 5px;
-  font-family: 'Asap Regular', sans-serif;
+  font-family: 'Asap', sans-serif;
   font-size: 63px;
   text-transform: uppercase;
   text-align: center;
@@ -204,7 +188,7 @@ figcaption {
 }
 
 #content h1 {
-  font-family: 'PTSans Regular', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 37px;
   text-transform: uppercase;
 }
@@ -231,7 +215,7 @@ figcaption {
   padding-left: 0.1em;
   align-self: center;
   text-align: center;
-  font-family: 'PTSans Regular', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: lighter;
   font-size: 43px;
   text-transform: uppercase;
@@ -272,8 +256,8 @@ figcaption {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
-  white-space: nowrap;
-  overflow: hidden;
+  /*white-space: nowrap;
+  overflow: hidden;*/
   color: #ffffff;
   background-color: #f5c506;
 }
@@ -284,7 +268,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-family: 'PTSans Regular', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 22px;
   hyphens: auto;
   color: #a9a9a7;
@@ -294,8 +278,8 @@ figcaption {
 
 #options-list > li {
   position: relative;
-  margin: auto 0 auto 1.8em;
-  padding: 0 0.2em;
+  margin: auto 0 auto 2em;
+  padding: 0;
   list-style: none; 
 }
 
@@ -303,9 +287,7 @@ figcaption {
   content: url("../assets/bullet.png");
   position: absolute;
   top: 0;
-  left: -0.75em;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
+  left: -1em;
   box-sizing:border-box;
   width: 0.5em;
   padding-right: 1em;
@@ -315,11 +297,14 @@ figcaption {
 
 #options-list li:nth-child(odd) {
   letter-spacing: 0.04em;
+  line-height: 1em;
 }
 
 #options-list li:nth-child(even) {
-  font-family: 'OpenSans Regular', sans-serif;
-  overflow-wrap: break-word;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.1em;
+  word-wrap: break-word;
+  hyphens: manual;
 }
 
 footer {
