@@ -299,6 +299,43 @@ figcaption {
   color: #b26529;
 }
 
+.slidecontainer {
+  margin: 0 0 12px 15px;
+  grid-area: slider;
+  width: 87.5%; /* Width of the outside container */
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  background: rgba(250, 227, 135, 0.4);
+  border-radius: 8px;
+  outline: none;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 198px;
+  height: 16px;
+  border-radius: 8px;
+  background: #ec9e03;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #ec9e03; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
 #options-box {
   background-color: #4c4c4c;
 }
