@@ -320,3 +320,35 @@ figcaption {
 #options-list{
   display: none
 }
+
+
+footer {
+  grid-area: footer;
+  height: 40px;
+  background-color: #4c4c4c;
+  box-shadow: 1px -2px #000000;
+}
+
+footer .logo {
+  margin: 0 64px;
+  padding: 5px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+footer .logo img {
+  width: 34px;
+  height: 34px;
+}
+footer h1 {
+  margin: 0 0 5px 0;
+  padding: 0 0 0 6px;
+  font-family: 'Lucida Sans Italic', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #ffffff;
+}
