@@ -40,24 +40,42 @@ body {
     "content"
     "options"
     "footer";
-  /*grid-template-rows: 112px 1671px 64px;*/
   background-image: url(../assets/top_layer.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1300px auto;
 
-  letter-spacing: 0.01em;
+  
 }
 
 header {
   grid-area: header;
   height: 110px;
-  margin-left: 140px;
-  margin-right: 140px;
-/*  margin-top: 40px;*/
+  margin: 0 140px 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+header .logo {
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+}
+header h1 {
+  margin: 0 0 12px 6px;
+  font-family: 'Lucida Sans Italic', sans-serif;
+  font-size: 41px;
+  font-style: italic;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 #header-navigation ul {
@@ -73,7 +91,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 24px;
   list-style-type: none;
   font-family: 'SegoeWP', sans-serif;
@@ -105,6 +122,7 @@ header {
 }
 
 #ribbon {
+  grid-area: ribbon;
   height: 454px;
   display: grid;
   grid-template-columns: 141px 1fr 1fr 141px;
@@ -113,6 +131,10 @@ header {
 
 #ribbon .ribbon-video {
   margin: 0 0 10px 10px;
+}
+
+#ribbon .video-mobile {
+  display: none;
 }
 
 #ribbon .ribbon-text{
@@ -155,15 +177,11 @@ header {
   grid-area: advantages;
   height: 212px;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1300px auto;
 }
 
 #advantages {
   height: 100%;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0 140px 0;
   display: grid;
   grid-template-columns: 2px 1fr 2px 1fr 2px 1fr 2px;
   align-items: flex-end;

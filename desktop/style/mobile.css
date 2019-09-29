@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Lucida Sans Italic'; /*Helvetica, sans-serif;*/
+  src: url('./fonts/lucida-sans-italic.TTF');
+}
+
+@font-face {
+  font-family: 'SegoeWP Light';
+  src: url('./fonts/segoe-wp-light.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeWP';
+  src: url('./fonts/segoe-wp.woff');
+}
+
+@font-face {
+  font-family: 'SegoeUI Light';
+  src: url('./fonts/segoe-ui-light.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeUI Bold';
+  src: url('./fonts/segoe-ui-bold.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('./fonts/segoe-ui.ttf');
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+  display: grid;
+  align-items: stretch;
+  grid-template-areas: 
+    "header"
+    "ribbon"
+    "advantages"
+    "content"
+    "options"
+    "footer";
+
+  background-color: sandybrown;
+  letter-spacing: 0.01em;
+}
+
+header {
+  grid-area: header;
+  height: 63px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 186px auto;
+  align-items: stretch;
+  background-color: grey;
+}
+
+header .logo {
+  padding: 0 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header img {
+  width: 39px;
+  height: 39px;
+}
+header h1 {
+  margin: 0 0 0 6px;
+  font-family: 'Lucida Sans Italic', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#header-navigation ul {
+  margin: 0;
+  padding: 0;
+  width: 454px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+
+  font-family: 'SegoeWP', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+
+  list-style: none;
+}
+
+#header-navigation li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5c506;
+}
+
+#header-navigation li a{
+  display: flex;
+  align-items: center;
+  color: #9B7D08;
+  text-decoration: none;
+}
+
+#header-navigation .menu-icon {
+  height: 25px;
+  width: 25px;
+}
+
+#header-navigation li a:hover{
+  color: #000000;
+  text-decoration: underline;
+}
+
+#header-navigation li+li {
+  margin-left:1px;
+}
+
+#ribbon {
+  grid-area: ribbon;
+  height: 327px;
+
+}
+
+#ribbon .ribbon-video {
+  margin: 0;
+}
+
+#ribbon .video-desktop {
+  display: none;
+}
+
+#ribbon .ribbon-text,
+#ribbon .ribbon-button {
+  display: none;
+}
+
+#advantages-box {
+  grid-area: advantages;
+  height: 174px;
+  background-color: #ffffff;
+}
+
+#advantages {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-end;
+  text-align: center;
+}
+
+#advantages .table-spacer{
+  display: none;
+}
+
+#advantages figure {
+  padding-bottom: 15px;
+}
+
+#advantages img {
+  height: 70px;
+  width: auto;
+}
+
+figcaption {
+  margin-top: 5px;
+  list-style-type: none;
+  font-family: 'SegoeUI Light', sans-serif;
+  font-size: 23px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000000;
+}
