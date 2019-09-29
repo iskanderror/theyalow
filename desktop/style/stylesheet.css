@@ -61,6 +61,7 @@ header {
 }
 
 #header-navigation ul {
+  margin: 0;
   display: grid;
   width:454px;
   grid-template-columns: 173fr 132fr 147fr;
@@ -103,56 +104,41 @@ header {
   margin-left:1px;
 }
 
-.logo {
-  margin-bottom: 8px;
-}
-
-/*
-main {
-  display: grid;
-  grid-template-rows: 454px 212px 509px 499px;
-}*/
-
 #ribbon {
-  grid-area: ribbon;
   height: 454px;
   display: grid;
-  grid-template-columns: 141px auto 141px;
+  grid-template-columns: 141px 1fr 1fr 141px;
   align-items: center;
 }
 
-#ribbon-content {
-  display: inline-flex;
-  justify-content: space-evenly;
-  margin-right: 15px;
+#ribbon .ribbon-video {
+  margin: 0 0 10px 10px;
 }
 
-.ribbon-video {
-  margin-right: 30px;
-  padding-bottom: 10px;
-}
-
-.ribbon-text{
-  padding-top: 5px;
+#ribbon .ribbon-text{
+  padding: 0 0 0.5em 0.5em;
   font-family: 'Asap', sans-serif;
   font-size: 63px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: center;
 }
 
 #ribbon .ribbon-text-up {
+  margin: 0;
   color: #f5c506;
 }
 
 #ribbon .ribbon-text-down {
-  padding-left: 10px;
+  margin: 0;
   color: #ffffff;
 }
 
 #ribbon .ribbon-button{
-  height: 58px;
-  width: 33px;
-  margin-bottom: 20px;
+  height: 57px;
+  width: 32px;
+  margin: 0 0px 18px;
+  padding: 0;
   border: none;
   background-color: #f5c506;
 }
@@ -168,7 +154,7 @@ main {
 #advantages-box {
   grid-area: advantages;
   height: 212px;
-  background-image: url(../assets/advantages_layer.png);
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1300px auto;
