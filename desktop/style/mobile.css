@@ -237,8 +237,8 @@ figcaption {
   margin: 0;
   grid-area: social;
   height: 100%;
+  display: flex;
   background-color: #f5c507;
-  position: relative;
 }
 
 .content-social .content-faceplate-expand {

@@ -355,6 +355,9 @@ figcaption {
   cursor: pointer; /* Cursor on hover */
 }
 
+#content-social-messages {
+  display:none;
+}
 
 #options-box {
   grid-area: options;
