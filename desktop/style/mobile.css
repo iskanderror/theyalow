@@ -41,7 +41,7 @@ body {
     "options"
     "footer";
 
-  background-color: sandybrown;
+  background-color: aquamarine;
   letter-spacing: 0.01em;
 }
 
@@ -177,4 +177,146 @@ figcaption {
   text-transform: uppercase;
   white-space: nowrap;
   color: #000000;
+}
+
+#content-box {
+  grid-area: content;
+  height: 480px;
+  background-color: white;
+}
+
+#content {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "text video"
+    "social social";
+  align-items: flex-start;
+
+
+  font-family: 'SegoeWP Light', sans-serif;
+  font-size: 29px;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+
+#content-header {
+  display: none;
+}
+
+#content .content-faceplate {
+  align-self: stretch;
+  margin: 6px 5px 5px 9px;
+  background-color: #ec9e03;
+  position: relative;
+}
+
+#content .content-faceplate-expand {
+  position: absolute;
+  bottom: 11px;
+  right: 11px;
+}
+
+#content .content-text {
+  grid-area: text;
+  margin: 0;
+  padding: 0.5em 1em 0;
+  text-align: left;
+}
+
+#content .content-video{
+  grid-area: video;
+  align-self: stretch;
+  margin: 5px;
+}
+
+#content .content-social {
+  margin: 0;
+  grid-area: social;
+  height: 100%;
+  background-color: #f5c507;
+  position: relative;
+}
+
+.content-social .content-faceplate-expand {
+  display: none;
+}
+
+#content .content-social-followers,
+#content-calendar,
+.slidecontainer {
+  display: none;
+}
+
+#options-box {
+  grid-area: options;
+  height: 466px;
+  background-color: #474747;
+}
+
+#options {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "picture";
+  align-items: flex-start;
+  height: 100%;
+}
+
+#options-header {
+  grid-area: header;
+  margin: 0.5em;
+  align-self: center;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 39px;
+  text-transform: uppercase;
+  letter-spacing: 0.055em;
+  color: #f5c506;
+}
+
+#options-picture {
+  grid-area: picture;
+  margin: 25px 0 30px 55px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+#options-picture-tablet,
+#options-picture-mobile {
+  margin-left: 25px;
+  padding-bottom: 40px;
+}
+
+#options-picture-label {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -27px;
+  left: -27px;
+  box-sizing:border-box;
+  height: 117px;
+  width: 117px;
+  border-radius: 50%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 117px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: #f5c506;
+}
+
+#options-list{
+  display: none
 }
