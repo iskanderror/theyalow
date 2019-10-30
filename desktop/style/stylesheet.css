@@ -115,15 +115,61 @@ header .logo--title {
   cursor: pointer;
 }
 
-.ribbon_video {
-  height: 327px;
-  width: 640px;
-  
+.ribbon {
+  font-family: 'Asap', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-main {
+.ribbon--video {
+  height: 327px;
+  width: 640px;
+  background:transparent url('../assets/parrots_mobile.png') no-repeat 0 0;
+  background-size: 100%;
+}
+
+.ribbon--text,
+.ribbon--button {
   display: none;
 }
+
+.advantages {
+  grid-area: advantages;
+  height: 174px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: stretch;
+  font-family: 'SegoeUI Light', sans-serif;
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000000;
+}
+
+.advantages_item {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.advantages_item--image {
+  height: 70px;
+  width: auto;
+  margin-bottom: 21px;
+}
+
+#advantages-box,
+#content-box {
+  display: none;
+}
+
+
 
 footer {
   display: none;
@@ -165,13 +211,70 @@ footer {
     box-shadow: -4px -5px rgba(245,197,6,0.27), -8px -8px rgba(245,197,6,0.27);
   }
 
-  .ribbon_video {
+  .ribbon {
+    grid-area: ribbon;
+    height: 454px;
+    position: relative;
+    padding: 0 141px;
+    display: flex;
+    align-items: center;
+    font-size: 63px;
+  }
+
+  .ribbon--button {
+    display: block;
+    position: absolute;
+    top: 190px;
+    height: 57px;
+    width: 32px;
+    background-color: #f5c506;
+  }
+
+  #ribbon_prev {
+    left: 0;
+  }
+
+  #ribbon_next {
+    right: 0;
+  }
+
+  .ribbon--video {
     width: 549px;
-    background:transparent url('./assets/parrots.png') no-repeat 0 0;
-    -webkit-background-size:cover; 
-    -moz-background-size:cover; 
-    -o-background-size:cover;
-    background-size: cover;
+    margin: 0 0 10px 10px;
+    background:transparent url('../assets/parrots.png') no-repeat 0 0;
+  }
+
+  .ribbon--text {
+    display: inline-block;
+    flex: 1;
+    margin-bottom: 0.7em;
+    margin-left: 0.5em;
+  }
+
+  .ribbon--text-line-up {
+    color: #f5c506;
+  }
+  
+  .ribbon--text-line-down {
+    color: #ffffff;
+  }
+
+  .advantages {
+    height: 212px;
+    padding: 0 141px;
+    font-size: 27px;
+  }
+
+  .advantages_item {
+    padding-bottom: 35px;
+  }
+
+  .advantages_item:nth-child(n) {
+    border-left: 1px solid #d4d4d4;
+  }
+
+  .advantages_item:nth-last-child(1) {
+    border-right: 1px solid #d4d4d4;
   }
 
 }
