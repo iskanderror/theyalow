@@ -164,11 +164,97 @@ header .logo--title {
   margin-bottom: 21px;
 }
 
-#advantages-box,
-#content-box {
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "text video"
+    "social social";
+}
+
+.content--header,
+.content_date,
+.content_social--counter,
+.slidecontainer {
   display: none;
 }
 
+.content_faceplate {
+  margin: 6px 5px 5px 9px;
+  background-color: #ec9e03;
+  position: relative;
+  font-family: 'SegoeWP Light', sans-serif;
+  font-size: 29px;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+
+.content_faceplate--text {
+  grid-area: text;
+  margin: 0;
+  padding: 0.5em 1em 0;
+  text-align: left;
+}
+
+.content_faceplate--expand {
+  position: absolute;
+  bottom: 11px;
+  right: 11px;
+}
+.content_video{
+  grid-area: video;
+  align-self: stretch;
+  margin: 5px;
+  background:transparent url('../assets/monkey.png') no-repeat 0 0;
+}
+
+.content_social {
+  grid-area: social;
+  display: flex;
+  font-size: 13px;
+}
+
+.options--details {
+  display: flex;
+
+}
+
+.options_picture {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+.options_picture--option-tablet,
+.options_picture--option-mobile {
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+
+.options_picture--label {
+  position: absolute;
+  top: -27px;
+  left: -27px;
+  height: 117px;
+  width: 117px;
+  border-radius: 50%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 117px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: #f5c506;
+}
+
+.options_list{
+  display: none;
+}
 
 
 footer {
@@ -275,6 +361,106 @@ footer {
 
   .advantages_item:nth-last-child(1) {
     border-right: 1px solid #d4d4d4;
+  }
+
+  .content {
+    padding: 0 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "text video social"
+    "calendar . ."
+    "slider slider slider";
+  }
+
+  .content--header {
+    display: block;
+    grid-area: header;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 37px;
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .content_faceplate {
+    grid-area: text;
+    font-family: 'SegoeWP Light', sans-serif;
+    font-size: 29px;
+    color: #ffffff;
+  }
+
+  .content_video {
+    grid-area: video;
+  }
+
+  .content_social {
+    grid-area: social;
+  }
+
+  .content_social--messages {
+    display: none;
+  }
+
+  .content_social--counter {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+  }
+
+  .content_date {
+    display: block;
+    grid-area: calendar;
+    height: 86px;
+    width: 113px;
+    text-align: center;
+    background-color: #ddb101;
+  }
+
+  .slidecontainer {
+    display: block;
+    grid-area: slider;
+    width: 87.5%; /* Width of the outside container */
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 16px;
+    background: rgba(250, 227, 135, 0.4);
+    border-radius: 8px;
+    outline: none;
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 198px;
+    height: 16px;
+    border-radius: 8px;
+    background: #ec9e03;
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #ec9e03; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .options {
+    padding: 0 140px;
+  }
+
+  .options_list{
+    display: block;
   }
 
 }
