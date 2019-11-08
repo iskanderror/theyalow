@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TheYalow</title>
+    <link rel="stylesheet" href="./style/stylesheet.css">
+    <!---link rel="stylesheet" href="./style/mobile.css"--->
+    <!--link rel="stylesheet" media="all and (max-width: 1299px)" href="./style/mobile.css"--->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img class="logo--image" src="./assets/star.png" alt="Logo" height="85px">
+        <h1 class="logo--title">TheYalow</h1>
+      </div>
+      <nav class = "navigation">
+        <a class = "navigation_item" href="#">
+          <img class="navigation_item--icon" src="./assets/about_us.png" alt="about_us" class="menu-icon" height="19px">
+          <p class="navigation_item--text">About Us</p>
+        </a>
+        <a class = "navigation_item" href="#">
+          <img class="navigation_item--icon" src="./assets/services.png" alt="services" class="menu-icon" height="19px">
+          <p class="navigation_item--text">Services</p>
+        </a>
+        <a class = "navigation_item" href="#">
+          <img class="navigation_item--icon" src="./assets/contact.png" alt="contact" class="menu-icon" height="19px">
+          <p class="navigation_item--text">Contact</p>
+        </a>
+      </nav>
+    </header>
+
+      <main>
+        <div class="ribbon">
+          <button class="ribbon--button" id = "ribbon_prev"><img src="./assets/slider_left.png"></button>
+          <video class="ribbon--video" controls poster="./assets/transparent_1x1.png" src="#" height="327px" width="640px"></video>
+          <div class="ribbon--text">
+            <p class="ribbon--text-line-up">The cool</p>
+            <p class="ribbon--text-line-down">The minimal</p>
+          </div>
+          <button class="ribbon--button" id = "ribbon_next"><img src="./assets/slider_right.png"></button>
+        </div>
+        
+        <div class="advantages">
+          <div class="advantages_item">
+            <img class="advantages_item--image" src="./assets/cloud.png" width="110px">
+            <p class="advantages_item--text">better design</p>
+          </div>
+          <div class="advantages_item">
+              <img class="advantages_item--image" src="./assets/leave.png" width="92px">
+              <p class="advantages_item--text">customize</p>
+          </div>
+          <div class="advantages_item">
+              <img class="advantages_item--image" src="./assets/plane.png" width="82px">
+              <p class="advantages_item--text">its free</p>
+          </div>
+        </div>  
+        
+        <div class="content">
+          <h1 class="content--header">Lorem ipsum dolor sit amet</h1>
+          <div class="content_faceplate">
+            <p class="content_faceplate--text">Lorem ipsum dolor sit amet, consecte&shytur adipisicing elit, sed do eiusmod tempor inci&shydidunt ut</p>
+            <a class="content_faceplate--expand" href="#"><img src="./assets/plus.png" alt="expand" height="12px" width="12px"></a>
+          </div> 
+          <video class="content_video" src="#" controls poster="./assets/transparent_1x1.png" width="316px" height="233px"></video>
+          <div class="content_faceplate content_social">
+            <img class="content_social--icon" src="./assets/twitter.png" alt="twitter" height="134px" width="164px">
+            <p class="content_social--counter">22</p>
+            <a class="content_faceplate--expand" href="#"><img src="./assets/plus.png" alt="expand" height="12px" width="12px"></a>
+            <div class="content_social--messages message_block">
+              <p class="message"> Daily Mobile UI Design Inspiration #1 via @csauthor</p>
+              <p class="message">Daily Mobile UI Design Inspiration #1 via @csauthor</p>
+              <p class="message">Daily Mobile UI Design Inspiration #1 via @csauthor</p>
+              <form class="social_input"   action="#" method="POST">
+                <input class="social_input--text" type="text" name="tweet_text">
+                <input class="social_input--button" type="submit" value="Tweet" name="tweet_button">
+              </form>
+            </div>
+          </div>
+          <div class="content_date">
+            <p class="content_date--day">25</p>
+            <p class="content_date--month">april</p>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="36" class="slider" id="myRange">
+          </div>
+        </div>
+
+        <div class="options">
+          <h2 class="options--header">Lorem ipsum dolor sit amet</h2>
+          <div class="options--details">
+            <div class="options_picture">
+              <p class="options_picture--label">its 100% free</p>
+              <img class="options_picture--option-pc" src="./assets/pc.png" width="323px" height="255px">
+              <img class="options_picture--option-tablet" src="./assets/tablet.png" width="129px" height="173px">
+              <img class="options_picture--option-mobile" src="./assets/tablet.png" width="39px" height="63px">
+            </div>
+            <ul class="options_list">
+              <li>Sed ut perspiciatis unde omnis</li>
+              <li>Lorem ipsum dolor sit amet, con-<wbr>sectetur adipisicing </li>
+              <li>Sed ut perspiciatis unde omnis</li>
+              <li>Lorem ipsum dolor sit amet, con-<wbr>sectetur adipisicing </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="logo">
+            <img src="./assets/star.png" alt="Logo" height="52px">
+            <h1>TheYalow</h1>
+        </div>
+      </footer>
+    
+  </body>
+</html>

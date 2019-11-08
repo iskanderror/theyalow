@@ -1,57 +1,35 @@
-@font-face {
-  font-family: 'Lucida Sans Italic'; /*Helvetica, sans-serif;*/
-  src: url('./fonts/lucida-sans-italic.TTF');
-}
-
-@font-face {
-  font-family: 'SegoeWP Light';
-  src: url('./fonts/segoe-wp-light.ttf');
-}
-
-@font-face {
-  font-family: 'SegoeWP';
-  src: url('./fonts/segoe-wp.woff');
-}
-
-@font-face {
-  font-family: 'SegoeUI Light';
-  src: url('./fonts/segoe-ui-light.ttf');
-}
-
-@font-face {
-  font-family: 'SegoeUI Bold';
-  src: url('./fonts/segoe-ui-bold.ttf');
-}
-
-@font-face {
-  font-family: 'SegoeUI';
-  src: url('./fonts/segoe-ui.ttf');
-}
-
-body {
-  width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: 112px 1671px 64px;
-  align-items: center;
-  background-image: url(../assets/top_layer.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1300px auto;
-
-  letter-spacing: 0.01em;
-}
-
 header {
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-top: 40px;
+  grid-area: header;
+  height: 110px;
+  margin: 0 140px 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-.menu ul {
+header .logo {
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+}
+header h1 {
+  margin: 0 0 12px 6px;
+  font-family: 'Lucida Sans Italic', sans-serif;
+  font-size: 41px;
+  font-style: italic;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#header-navigation ul {
+  margin: 0;
   display: grid;
   width:454px;
   grid-template-columns: 173fr 132fr 147fr;
@@ -59,11 +37,10 @@ header {
   text-align: center;
 }
 
-.menu li{
+#header-navigation li{
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 24px;
   list-style-type: none;
   font-family: 'SegoeWP', sans-serif;
@@ -71,76 +48,69 @@ header {
   text-transform: uppercase;
   padding: 0.5rem;
   background-color: #f5c506;
-  box-shadow: -5px -5px rgba(245,197,6,0.27), -10px -10px rgba(245,197,6,0.27); /* Параметры тени */
+  box-shadow: -5px -5px rgba(245,197,6,0.27), -10px -10px rgba(245,197,6,0.27);
 }
 
-.menu li a{
+#header-navigation li a{
   display: flex;
   align-items: center;
   color: #9B7D08;
   text-decoration: none;
 }
 
-.menu .menu-icon {
+#header-navigation .menu-icon {
   margin-right: 10px;
 }
 
-.menu li a:hover{
+#header-navigation li a:hover{
   color: #000000;
   text-decoration: underline;
 }
 
-.menu li+li {
+#header-navigation li+li {
   margin-left:1px;
 }
 
-.logo {
-  margin-bottom: 8px;
-}
-
-main {
-  display: grid;
-  grid-template-rows: 454px 212px 509px 499px;
-}
-
 #ribbon {
+  grid-area: ribbon;
+  height: 454px;
   display: grid;
-  grid-template-columns: 141px auto 141px;
+  grid-template-columns: 141px 1fr 1fr 141px;
   align-items: center;
 }
 
-#ribbon-content {
-  display: inline-flex;
-  justify-content: space-evenly;
-  margin-right: 15px;
+#ribbon .ribbon-video {
+  margin: 0 0 10px 10px;
 }
 
-.ribbon-video {
-  margin-right: 30px;
-  padding-bottom: 10px;
+#ribbon .video-mobile {
+  display: none;
 }
 
-.ribbon-text{
-  padding-top: 5px;
+#ribbon .ribbon-text{
+  padding: 0 0 0.5em 0.5em;
   font-family: 'Asap', sans-serif;
   font-size: 63px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: center;
 }
 
 #ribbon .ribbon-text-up {
+  margin: 0;
   color: #f5c506;
 }
 
 #ribbon .ribbon-text-down {
-  padding-left: 10px;
+  margin: 0;
   color: #ffffff;
 }
 
-.ribbon-button{
-  height: 58px;
-  width: 33px;
-  margin-bottom: 20px;
+#ribbon .ribbon-button{
+  height: 57px;
+  width: 32px;
+  margin: 0 0px 18px;
+  padding: 0;
   border: none;
   background-color: #f5c506;
 }
@@ -154,16 +124,14 @@ main {
 }
 
 #advantages-box {
-  background-image: url(../assets/advantages_layer.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1300px auto;
+  grid-area: advantages;
+  height: 212px;
+  background-color: #ffffff;
 }
 
 #advantages {
   height: 100%;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0 140px 0;
   display: grid;
   grid-template-columns: 2px 1fr 2px 1fr 2px 1fr 2px;
   align-items: flex-end;
@@ -190,11 +158,14 @@ figcaption {
 }
 
 #content-box {
+  grid-area: content;
+  height: 509px;
   background-color: #f5c407;
 }
 
 #content {
   margin: 0 140px 0px 140px;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr auto 1fr 1fr;
@@ -204,7 +175,6 @@ figcaption {
     "calendar . ."
     "slider slider slider";
   align-items: flex-start;
-  height: 100%;
 
   font-family: 'SegoeWP Light', sans-serif;
   font-size: 29px;
@@ -335,8 +305,13 @@ figcaption {
   cursor: pointer; /* Cursor on hover */
 }
 
+#content-social-messages {
+  display:none;
+}
 
 #options-box {
+  grid-area: options;
+  height: 499px;
   background-color: #4c4c4c;
 }
 
@@ -387,8 +362,6 @@ figcaption {
   position: absolute;
   top: -30px;
   left: -18px;
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
   box-sizing:border-box;
   height: 117px;
   width: 117px;
@@ -399,8 +372,6 @@ figcaption {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.1em;
-  /*white-space: nowrap;
-  overflow: hidden;*/
   color: #ffffff;
   background-color: #f5c506;
 }
@@ -451,19 +422,32 @@ figcaption {
 }
 
 footer {
-  border-top: 1px solid #000000;
+  grid-area: footer;
+  height: 64px;
   background-color: #4c4c4c;
+  box-shadow: 1px -2px #000000;
 }
 
-.footer-logo{
-  margin-left: 140px;
+footer .logo {
+  margin: 0 140px;
+  padding: 5px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
-/*
+
+footer .logo img {
+  width: 52px;
+  height: 52px;
+}
 footer h1 {
+  margin: 0 0 5px 0;
+  padding: 0 0 0 6px;
   font-family: 'Lucida Sans Italic', sans-serif;
   font-size: 29px;
   font-style: italic;
+  font-weight: lighter;
   text-transform: uppercase;
   color: #ffffff;
 }
-*/
+
