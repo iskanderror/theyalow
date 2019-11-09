@@ -484,6 +484,11 @@ footer h1 {
     margin-left: 0.5em;
   }
 
+  .ribbon--button:hover {
+    cursor: pointer;
+    background-color: #EC9E03;
+  }
+
   .ribbon--text-line-up {
     color: #f5c506;
   }
